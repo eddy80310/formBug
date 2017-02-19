@@ -18,9 +18,12 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
+        "../node_modules/@angular/material/core/theming/prebuilt/indigo-pink.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",

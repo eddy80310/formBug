@@ -1,19 +1,20 @@
-import { AlertService } from './services/alert.service';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { AppModule } from './app.module';
+import { Router } from '@angular/router';
+import { AlertService } from './../services/alert.service';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-account',
+  templateUrl: './account.component.html',
+  styleUrls: ['./account.component.css']
 })
-export class AppComponent implements OnInit {
+export class AccountComponent implements OnInit {
 
   private changePasswordForm: FormGroup;
 
+
   constructor(
+    private router: Router,
     private formBuilder: FormBuilder,
     private alertService: AlertService,
   ) { }
